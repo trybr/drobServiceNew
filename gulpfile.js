@@ -127,3 +127,5 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch'));
+
+gulp.task('build', gulp.parallel('styles', 'scripts'));
