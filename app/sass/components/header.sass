@@ -1,0 +1,162 @@
+.header
+    padding-top: 32px
+    position: relative
+    z-index: 2
+
+    .header-top-panel
+        display: flex
+        flex-direction: row
+        justify-content: space-between 
+        position: relative
+        z-index: 2
+        .header__logo
+            width: 352px
+            height: 189px
+            display: block
+            background: url('../img/logo.png') no-repeat center center
+        .header-navigation
+            display: flex
+            flex-direction: row
+            justify-content: space-between 
+            align-items: flex-start
+            border-top: 1px solid #919191
+            height: 85px
+        .header-navigation-menu
+            display: flex
+            flex-direction: row
+            align-items: flex-start
+            justify-items: flex-start
+            list-style: none
+            margin: 0px
+            padding: 0px
+            .header-navigation-menu__item
+                position: relative
+                padding-top: 18px
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 10px
+                    right: 0px
+                    width: 1px
+                    height: 50px     
+                    background: #919191
+
+                &:nth-child(1)
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 10px
+                        left: 0px
+                        width: 1px
+                        height: 50px     
+                        background: #919191
+
+                &:hover
+                    .header-navigation-menu__hover
+                        display: block
+
+                .header-navigation-menu__hover
+                    height: 70px
+                    left: 0
+                    right: 0px
+                    position: absolute
+                    top: -3px
+                    width: 85px
+                    z-index: 1
+                    margin: 0 auto
+                    background: url('../img/menu-hover.png') no-repeat center center
+                    background-size: contain
+                    display: none
+                
+                .header-navigation-menu__link
+                    color: #3c3c3c
+                    font-size: 20px
+                    text-decoration: none
+                    font-weight: 400
+                    padding: 18px 18px
+                    position: relative
+                    z-index: 2
+
+        .header-navigation-right-block
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            align-items: center
+            padding-top: 18px
+            padding-left: 65px
+            position: relative
+            &:after
+                content: ''
+                background: url('../img/hover-bg.png') no-repeat center center
+                background-size: contain
+                display: block
+                height: 55px
+                left: auto
+                position: absolute
+                right: 38px
+                top: 5px
+                width: 135px
+                z-index: 1
+
+        .header-navigation__phone
+            display: block
+            padding-right: 10px
+            border-right: 1px solid #919191
+            font-size: 20px
+            color: #3c3c3c
+            text-decoration: none
+            position: relative
+            z-index: 2
+
+        .header-navigation-search
+            margin-left: 10px
+            width: 20px
+            height: 20px
+            display: block
+            background: url('../img/search-icon.png') no-repeat center center
+            background-size: contain
+            cursor: pointer
+        
+
+    .header-banner
+        margin-top: -110px
+        height: 455px
+        position: relative
+        z-index: 1
+        .header-banner__image
+            background-size: cover
+            width: 100%
+            height: 455px
+        .header-banner-title
+            position: absolute
+            bottom: -15px
+            right: 200px
+            z-index: 2
+            width: 524px
+            height: 200px
+            text-align: center
+            display: flex
+            justify-content: center
+            align-items: center
+            &:after
+                content: ''
+                background: url('../img/header-title-bg.png') no-repeat center center
+                background-size: contain
+                display: block
+                left: auto
+                position: absolute
+                right: 0px
+                top: auto
+                bottom: 0px
+                width: 524px
+                height: 200px
+                z-index: -1
+        .header-banner__title
+            font-size: 48px
+            color: #f6d718
+            font-family: circleEB, sans-serif
+            font-weight: 600
+            text-transform: uppercase
+            position: relative
+            z-index: 2
+            margin: 0px

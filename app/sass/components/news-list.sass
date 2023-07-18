@@ -1,0 +1,48 @@
+.news-list
+    display: flex
+    flex-direction: column
+    .news-item
+        padding-bottom: 100px
+        background: #fff
+        padding-top: 50px
+        &:nth-child(2n+2)
+            background: #f1f1f1
+        .news-item-content__title
+            font-size: 32px
+            color: #343433
+            font-family: circleEB, sans-serif
+            font-weight: 600
+            margin: 0px
+            margin-bottom: 30px
+            position: relative
+            z-index: 2
+            text-align: left
+            width: 80%
+            &:before
+                content: ''
+                left: 40px
+                position: absolute
+                top: -30px
+                background: url('../img/news-list-title-decorator.png') no-repeat center center
+                background-size: contain
+                width: 118px
+                height: 75px
+                z-index: -1
+        .news-item-content
+            padding-left: 35px
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            .news-item-image
+                max-width: 335px
+                .news-item-image__img
+                    max-width: 335px
+            .news-item-content__text
+                font-family: circle, sans-serif
+                font-weight: 400
+                font-size: 18px
+                padding-left: 35px
+                text-align: left !important
+                p
+                    margin-bottom: 25px
+                    text-align: left !important

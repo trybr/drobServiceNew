@@ -1,0 +1,76 @@
+.advantages
+    margin-bottom: 75px
+    .advantages__title
+        text-align: center
+        color: #454545
+        font-size: 28px
+        padding: 15px 0px
+        position: relative
+        margin-bottom: 40px
+        margin-top: 75px
+        &::after
+            content: ''
+            height: 1px
+            width: 365px
+            display: block
+            margin: 0 auto
+            position: absolute
+            bottom: 0px
+            left: 0px
+            right: 0px
+            background: #7d7d7c
+        &::before
+            content: ''
+            height: 1px
+            width: 365px
+            display: block
+            margin: 0 auto
+            position: absolute
+            top: 0px
+            left: 0px
+            right: 0px
+            background: #7d7d7c
+    .advantages-list
+        margin: 0px
+        padding: 0px
+        list-style: none
+        .advantages-list__item
+            text-transform: uppercase
+            position: relative
+            text-align: center
+            padding: 12px 0px
+            &:last-child
+                &::after
+                    display: none !important
+
+            &::after
+                content: ''
+                height: 1px
+                width: 80%
+                display: block
+                margin: 0 auto
+                position: absolute
+                bottom: 0px
+                left: 0px
+                right: 0px
+                background: #c4c4c4
+
+            .advantages-list__item__number
+                color: #faee90
+                font-size: 95px
+                font-weight: bold
+                left: 0
+                position: absolute
+                right: 0
+                top: -25px
+                z-index: 1
+
+            .advantages-list__item__text
+                position: relative
+                z-index: 2
+                margin: 0px
+                font-size: 25px
+                color: #5b5b5b
+                font-family: circleEB, sans-serif
+                font-weight: 600
+                

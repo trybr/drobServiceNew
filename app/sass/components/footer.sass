@@ -1,0 +1,135 @@
+.footer
+    position: relative
+    .footer__logo
+        width: 295px
+        height: 160px
+        display: block
+        background: url('../img/logo-footer.png') no-repeat center center
+        background-size: contain
+    .footer__copyright
+        margin: 0px
+        color: #3c3c3c
+        font-size: 20px
+        text-align: center
+        margin-top: 30px
+        font-weight: 300
+    .footer-blocks
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        padding-bottom: 20px
+        position: relative
+        &::before
+            content: ''
+            background: url('../img/footer-bg.png') no-repeat center center
+            background-size: contain
+            width: 1310px
+            height: 312px
+            display: block
+            position: absolute
+            bottom: 0px
+            left: -50px
+        .footer-block
+            text-align: left
+            padding: 0px 20px
+            position: relative
+            &:first-child
+                margin-top: -70px
+                &::before
+                    display: none
+            &:last-child
+                padding-top: 25px
+            &::before
+                content: ''
+                width: 1px
+                height: 230px
+                background: #fff
+                opacity: 0.5
+                position: absolute
+                left: 0px
+                top: 0px
+                right: auto
+                display: block
+            .footer-menu
+                list-style: none
+                padding: 0px
+                margin: 0px
+                line-height: 34px
+                .footer-menu__item
+                    font-size: 26px
+                    .footer-menu__item__link
+                        text-decoration: none
+                        color: #3c3c3c
+                        font-weight: 300
+                        text-transform: uppercase
+                        position: relative
+                        z-index: 2
+                        &:hover
+                            &::before
+                                content: ''
+                                background: url('../img/footer-menu-hover.png') no-repeat center center
+                                background-size: contain
+                                bottom: 0px
+                                content: ""
+                                display: block
+                                height: 35px
+                                left: -18px
+                                position: absolute
+                                width: 200px
+                                z-index: -1
+
+            .footer-partners
+                max-width: 315px
+                max-height: 165px
+                .footer-partners__img
+                    max-width: 315px
+                    max-height: 165px
+                    object-fit: cover
+
+            .footer-contacts
+                line-height: 30px
+                letter-spacing: 0.8px
+                .footer-contacts__address
+                    margin-bottom: 0px
+                    text-decoration: none
+                    color: #3c3c3c
+                    font-weight: 600
+                    text-transform: uppercase
+                    font-size: 22px
+                    .contacts_small
+                        font-size: 18px
+
+
+                .footer-contacts__phone, .footer-contacts__email
+                    text-decoration: none
+                    text-decoration: none
+                    color: #3c3c3c
+                    font-weight: 300
+                    text-transform: uppercase
+                    font-size: 22px
+                    display: block
+                    .contacts_small
+                        font-size: 18px
+
+                    &:hover
+                        opacity: 0.7
+
+                .footer-contacts__phone
+                    font-weight: bold
+
+
+            .footer-contacts-social
+                list-style: none
+                padding: 0px
+                margin: 0px
+                margin-top: 10px
+                .footer-contacts-social__item
+                    .footer-contacts-social__item__link
+                        display: block
+                        text-decoration: none
+                        width: 30px
+                        height: 30px
+                        background: url('../img/social-vk.png') no-repeat center center
+                        background-size: cover
+                        &:hover
+                            opacity: 0.7

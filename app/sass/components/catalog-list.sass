@@ -1,0 +1,68 @@
+.catalog-list
+    background: url('../img/catalog-list-bg.jpg') no-repeat center center
+    background-size: cover
+    min-height: 805px
+    margin-bottom: 75px
+    .catalog-list-items
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding: 90px 0px
+        .catalog-list-item
+            width: 324px
+            height: 625px
+            text-align: center
+            position: relative
+            background: #ffffff
+            border-bottom: 1px solid #e7e7e6
+
+            .catalog-list-item__link
+                text-decoration: none
+            .catalog-list-item-picture
+                height: 404px
+                overflow: hidden
+                .catalog-list-item-picture__img
+                    object-fit: cover
+                    width: 100%
+
+            .catalog-list-item-content
+                border-left: 1px solid #e7e7e6
+                border-right: 1px solid #e7e7e6
+                padding-top: 45px
+
+            .catalog-list-item__title
+                color: #3c3c3c
+                font-size: 32px
+                margin: 0
+                text-align: center
+                line-height: 34px
+                padding: 0px 28px
+
+            .catalog-list-item__more
+                margin-top: 22px
+                position: relative
+                .catalog-list-item__link
+                    color: #5b5b5b
+                    font-size: 14px
+                    font-family: circleEB, sans-serif
+                    font-weight: bold
+                    text-transform: uppercase
+                    position: relative
+                    z-index: 2
+
+                &::before
+                    content: ''
+                    display: block
+                    margin: 0 auto
+                    background: url('../img/button-hover.png') no-repeat center center
+                    background-size: cover
+                    width: 136px
+                    height: 40px
+                    position: absolute
+                    bottom: -27px
+                    left: 0px
+                    right: 0px
+                    z-index: 1
+                    
+
+            

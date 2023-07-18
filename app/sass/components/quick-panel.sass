@@ -1,0 +1,80 @@
+.quick-panel
+    position: fixed
+    right: 0px
+    top: 50%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-end
+    z-index: 99
+    text-align: center
+    -webkit-box-shadow: 0px 0px 13px 5px rgba(97, 98, 97, 0.34)
+    -moz-box-shadow: 0px 0px 13px 5px rgba(97, 98, 97, 0.34)
+    box-shadow: 0px 0px 13px 5px rgba(97, 98, 97, 0.34)
+    background: #62616142
+    border-radius: 6px
+    .quick-panel-item
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        width: 78px
+        height: 78px
+        background: #fff
+        border-radius: 6px
+        margin-bottom: 6px
+        cursor: pointer
+        padding-bottom: 8px
+        position: relative
+        &:hover, &.active
+            background: #f6d718
+
+        &.item-icon-1
+            &::after
+                content: ''
+                height: 1px
+                width: 26px
+                height: 26px
+                display: block
+                margin: 0 auto
+                position: absolute
+                top: 8px
+                left: 0px
+                right: 0px
+                background: url('../img/quick-panel/quick-panel-icon-1.png') no-repeat center center
+                background-size: contain
+
+        &.item-icon-2
+            &::after
+                content: ''
+                height: 1px
+                width: 26px
+                height: 26px
+                display: block
+                margin: 0 auto
+                position: absolute
+                top: 8px
+                left: 0px
+                right: 0px
+                background: url('../img/quick-panel/quick-panel-icon-2.png') no-repeat center center
+                background-size: contain
+
+        &.item-icon-3
+            &::after
+                content: ''
+                height: 1px
+                width: 33px
+                height: 33px
+                display: block
+                margin: 0 auto
+                position: absolute
+                top: 8px
+                left: 0px
+                right: 0px
+                background: url('../img/quick-panel/quick-panel-icon-3.png') no-repeat center center
+                background-size: contain
+
+        .quick-panel-item__title
+            font-size: 16px
+            line-height: 16px
+            padding: 0px 5px
+    
