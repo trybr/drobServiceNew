@@ -1,0 +1,130 @@
+.popup
+    width: 80%
+    position: relative
+    border: 1px solid #cdcece
+    padding-bottom: 120px
+    &::before
+        content: ''
+        width: 100%
+        height: 30px
+        background: #f6d718
+        display: block
+        position: absolute
+        bottom: 0px
+        left: 0px
+        right: 0px
+
+    .popup__title
+        margin: 0 auto
+        text-align: center
+        color: #454545
+        font-size: 22px
+        padding: 15px 40px
+        position: relative
+        font-family: circleEB, sans-serif
+        font-weight: bold
+        width: fit-content
+        &::after
+            content: ''
+            height: 1px
+            width: 100%
+            display: block
+            margin: 0 auto
+            position: absolute
+            bottom: 0px
+            left: 0px
+            right: 0px
+            background: #7d7d7c
+        &::before
+            content: ''
+            height: 1px
+            width: 100%
+            display: block
+            margin: 0 auto
+            position: absolute
+            top: 0px
+            left: 0px
+            right: 0px
+            background: #7d7d7c
+
+    .popup__text
+        color: #454545
+        font-size: 16px
+        position: relative
+        font-family: circle, sans-serif
+        font-weight: normal
+        text-align: center
+        a
+            color: #454545
+            font-size: 16px
+            text-decoration: underline
+
+
+    .popup-form
+        margin: 0 auto
+        width: 60%
+        .form-field-wrapper
+            margin-bottom: 30px
+        .form__label
+            color: #454545
+            font-size: 14px
+            display: block
+            margin-bottom: 5px
+        .form__input
+            color: #454545
+            border: 1px solid #d5d7db
+            width: 100%
+            height: 44px
+            display: block
+            border-radius: 3px
+            padding-left: 10px
+            &:focus
+                outline-color: #fcde00
+
+        .form__textarea
+            color: #454545
+            border: 1px solid #d5d7db
+            width: 100%
+            height: 100px
+            display: block
+            border-radius: 3px
+            resize: none
+            padding-left: 10px
+            padding-top: 10px
+            &:focus
+                outline-color: #fcde00
+
+        .form__button
+            font-size: 24px
+            font-family: circleEB, sans-serif
+            font-weight: bold
+            color: #fcde00
+            border: none
+            background: none
+            position: relative
+            z-index: 2
+            margin: 40px 0px 40px 0px
+            text-transform: uppercase
+            text-align: center
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 100%
+            height: 90px
+            cursor: pointer
+            &::before
+                content: ''
+                display: block
+                margin: 0 auto
+                background: url('../img/form-button.png') no-repeat center center
+                background-size: contain
+                width: 300px
+                height: 90px
+                position: absolute
+                top: 0px
+                left: 0px
+                right: 0px
+                z-index: -1
+
+            &:hover
+                color: #fff

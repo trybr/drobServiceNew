@@ -24,6 +24,128 @@
 
 <body>
 
+	<!-- quick panel -->
+	<div class="quick-panel">
+		<a href="#popupRequest" data-fancybox class="quick-panel-item item-icon-1">
+			<span class="quick-panel-item__title">
+				Онлайн заявка
+			</span>
+		</a>
+		<a href="#popupPrice" data-fancybox class="quick-panel-item item-icon-2">
+			<span class="quick-panel-item__title">
+				Заказать прайс
+			</span>
+		</a>
+		<a href="mailto:info@drobserbis.ru" class="quick-panel-item item-icon-3">
+			<span class="quick-panel-item__title">
+				E-mail
+			</span>
+		</a>
+	</div>
+	<!-- quick panel -->
+
+	<!-- popups -->
+	<div class="popup" style="display: none;" id="popupRequest">
+		<h4 class="popup__title">
+			ОНЛАЙН ЗАЯВКА
+		</h4>
+
+		<p class="popup__text">
+			Выберите интересующие Вас позиции в каталоге или спецпредложениях, оформите заявку и мы свяжемся с вами в ближайшее время. <br>
+			* - Обязательные для заполнения поля
+		</p>
+
+		<form action="" class="popup-form">
+			<div class="form-field-wrapper">
+				<label for="name" class="form__label">Ваше имя *</label>
+				<input class="form__input" type="text" name="name" id="name">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="company" class="form__label">Компания</label>
+				<input class="form__input" type="text" name="company" id="company">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="post" class="form__label">Должность</label>
+				<input class="form__input" type="text" name="post" id="post">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="phone" class="form__label">Телефон *</label>
+				<input class="form__input" type="text" name="phone" id="phone">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="email" class="form__label">Электронная почта *</label>
+				<input class="form__input" type="text" name="email" id="email">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="comment" class="form__label">Комментарий *</label>
+				<textarea class="form__textarea" name="comment" id="comment"></textarea>
+			</div>
+
+			<button class="form__button" type="submit">Заказать</button>
+		</form>
+
+		<p class="popup__text">
+			Все поля обязательны для заполнения <br>
+			Отправляя данные через форму, пользователь соглашается с <a href="#">Политикой конфиденциальности.</a>
+		</p>
+	</div>
+
+	<div class="popup" style="display: none;" id="popupPrice">
+		<h4 class="popup__title">
+			ЗАКАЗ ПРАЙС-ЛИСТА
+		</h4>
+
+		<p class="popup__text">
+			Выберите интересующие Вас позиции в каталоге или спецпредложениях, оформите заявку и мы свяжемся с вами в ближайшее время. <br>
+			* - Обязательные для заполнения поля
+		</p>
+
+		<form action="" class="popup-form">
+			<div class="form-field-wrapper">
+				<label for="name" class="form__label">Ваше имя *</label>
+				<input class="form__input" type="text" name="name" id="name">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="company" class="form__label">Компания</label>
+				<input class="form__input" type="text" name="company" id="company">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="post" class="form__label">Должность</label>
+				<input class="form__input" type="text" name="post" id="post">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="phone" class="form__label">Телефон *</label>
+				<input class="form__input" type="text" name="phone" id="phone">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="email" class="form__label">Электронная почта (на этот адрес мы отправим прайс) *</label>
+				<input class="form__input" type="text" name="email" id="email">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="comment" class="form__label">Укажите тип вашего оборудования *</label>
+				<textarea class="form__textarea" name="comment" id="comment"></textarea>
+			</div>
+
+			<button class="form__button" type="submit">Заказать</button>
+		</form>
+
+		<p class="popup__text">
+			Все поля обязательны для заполнения <br>
+			Отправляя данные через форму, пользователь соглашается с <a href="#">Политикой конфиденциальности.</a>
+		</p>
+	</div>
+	<!-- popups -->
+
 	<header class="header">
 		<div class="container">
 			<div class="header-top-panel">
