@@ -41,11 +41,16 @@
             .catalog-list-item__more
                 margin-top: 22px
                 position: relative
+                &:hover
+                    &::before 
+                        opacity: 0.8
+                        transition: 0.2s all
                 .catalog-list-item__link
                     color: #5b5b5b
                     font-size: 14px
-                    font-family: circleEB, sans-serif
-                    font-weight: bold
+                    font-family: Circe, sans-serif
+                    font-weight: 800
+                    font-style: normal
                     text-transform: uppercase
                     position: relative
                     z-index: 2

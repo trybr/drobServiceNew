@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>ДробСервис</title>
+	<meta name="description" content="ДробСервис">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#f6d718">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#f6d718">
+
+	<link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+
+	<!-- quick panel -->
+	<div class="quick-panel">
+		<a href="#popupRequest" data-fancybox class="quick-panel-item item-icon-1">
+			<span class="quick-panel-item__title">
+				Онлайн заявка
+			</span>
+		</a>
+		<a href="#popupPrice" data-fancybox class="quick-panel-item item-icon-2">
+			<span class="quick-panel-item__title">
+				Заказать прайс
+			</span>
+		</a>
+		<a href="mailto:info@drobserbis.ru" class="quick-panel-item item-icon-3">
+			<span class="quick-panel-item__title">
+				E-mail
+			</span>
+		</a>
+	</div>
+	<!-- quick panel -->
+
+	<!-- popups -->
+	<div class="popup" style="display: none;" id="popupRequest">
+		<h4 class="popup__title">
+			ОНЛАЙН ЗАЯВКА
+		</h4>
+
+		<p class="popup__text">
+			Выберите интересующие Вас позиции в каталоге или спецпредложениях, оформите заявку и мы свяжемся с вами в ближайшее время. <br>
+			* - Обязательные для заполнения поля
+		</p>
+
+		<form action="" class="popup-form">
+			<div class="form-field-wrapper">
+				<label for="name" class="form__label">Ваше имя *</label>
+				<input class="form__input" type="text" name="name" id="name">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="company" class="form__label">Компания</label>
+				<input class="form__input" type="text" name="company" id="company">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="post" class="form__label">Должность</label>
+				<input class="form__input" type="text" name="post" id="post">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="phone" class="form__label">Телефон *</label>
+				<input class="form__input" type="text" name="phone" id="phone">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="email" class="form__label">Электронная почта *</label>
+				<input class="form__input" type="text" name="email" id="email">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="comment" class="form__label">Комментарий *</label>
+				<textarea class="form__textarea" name="comment" id="comment"></textarea>
+			</div>
+
+			<button class="form__button" type="submit">Заказать</button>
+		</form>
+
+		<p class="popup__text">
+			Все поля обязательны для заполнения <br>
+			Отправляя данные через форму, пользователь соглашается с <a href="#">Политикой конфиденциальности.</a>
+		</p>
+	</div>
+
+	<div class="popup" style="display: none;" id="popupPrice">
+		<h4 class="popup__title">
+			ЗАКАЗ ПРАЙС-ЛИСТА
+		</h4>
+
+		<p class="popup__text">
+			Выберите интересующие Вас позиции в каталоге или спецпредложениях, оформите заявку и мы свяжемся с вами в ближайшее время. <br>
+			* - Обязательные для заполнения поля
+		</p>
+
+		<form action="" class="popup-form">
+			<div class="form-field-wrapper">
+				<label for="name" class="form__label">Ваше имя *</label>
+				<input class="form__input" type="text" name="name" id="name">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="company" class="form__label">Компания</label>
+				<input class="form__input" type="text" name="company" id="company">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="post" class="form__label">Должность</label>
+				<input class="form__input" type="text" name="post" id="post">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="phone" class="form__label">Телефон *</label>
+				<input class="form__input" type="text" name="phone" id="phone">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="email" class="form__label">Электронная почта (на этот адрес мы отправим прайс) *</label>
+				<input class="form__input" type="text" name="email" id="email">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="comment" class="form__label">Укажите тип вашего оборудования *</label>
+				<textarea class="form__textarea" name="comment" id="comment"></textarea>
+			</div>
+
+			<button class="form__button" type="submit">Заказать</button>
+		</form>
+
+		<p class="popup__text">
+			Все поля обязательны для заполнения <br>
+			Отправляя данные через форму, пользователь соглашается с <a href="#">Политикой конфиденциальности.</a>
+		</p>
+	</div>
+	<!-- popups -->
+
+	<header class="header">
+		<div class="container">
+			<div class="header-top-panel">
+				<a href="/" class="header__logo"></a>
+				<nav class="header-navigation">
+					<ul class="header-navigation-menu">
+						<li class="header-navigation-menu__item active">
+							<div class="header-navigation-menu__hover"></div>
+							<a href="" class="header-navigation-menu__link">О компании</a>
+						</li>
+						<li class="header-navigation-menu__item">
+							<div class="header-navigation-menu__hover"></div>
+							<a href="" class="header-navigation-menu__link">Каталог</a>
+						</li>
+						<li class="header-navigation-menu__item">
+							<div class="header-navigation-menu__hover"></div>
+							<a href="" class="header-navigation-menu__link">Новости</a>
+						</li>
+						<li class="header-navigation-menu__item">
+							<div class="header-navigation-menu__hover"></div>
+							<a href="" class="header-navigation-menu__link">Спецпредложения</a>
+						</li>
+						<li class="header-navigation-menu__item">
+							<div class="header-navigation-menu__hover"></div>
+							<a href="" class="header-navigation-menu__link">Доставка</a>
+						</li>
+						<li class="header-navigation-menu__item">
+							<div class="header-navigation-menu__hover"></div>
+							<a href="" class="header-navigation-menu__link">Галерея</a>
+						</li>
+						<li class="header-navigation-menu__item">
+							<div class="header-navigation-menu__hover"></div>
+							<a href="" class="header-navigation-menu__link">Контакты</a>
+						</li>
+					</ul>
+					<div class="header-navigation-right-block">
+						<div class="header-navigation-phone">
+							<a href="tel:+73512402060" class="header-navigation__phone">
+								+7 (351) 240-20-60
+							</a>
+						</div>
+						<div class="header-navigation-search"></div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<section class="header-banner">
+			<img src="img/news-bg.jpg" alt="" class="header-banner__image">
+			<div class="container">
+				<div class="header-banner-title">
+					<h1 class="header-banner__title">
+						География поставок
+					</h1>
+				</div>
+			</div>
+		</section>
+
+		<nav class="breadcrumb-navigation">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item active" aria-current="page">
+						<a href="#" class="breadcrumb-item__link">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumb-item separator" aria-current="page">/</li>
+					<li class="breadcrumb-item" aria-current="page">
+						<a href="#" class="breadcrumb-item__link">
+							География поставок
+						</a>
+					</li>
+				</ol>
+			</div>
+		</nav>
+	</header>
+
+    <div class="page-wrapper">
+        <div class="container-fixed">
+            <div class="page-menu-navigation-wrapper active">
+                <nav class="page-menu-navigation">
+                    <ul class="page-menu">
+                        <li class="page-menu-item">       
+                            <div class="page-menu-item__hover"></div>        
+                            <a href="#" class="page-menu-item__link">ИНЖИНИРИНГ</a>
+                        </li>
+                        <li class="page-menu-item active">
+                            <div class="page-menu-item__hover"></div>  
+                            <a href="#" class="page-menu-item__link">ГЕОГРАФИЯ ПОСТАВОК</a>
+                        </li>
+                        <li class="page-menu-item">
+                            <div class="page-menu-item__hover"></div>  
+                            <a href="#" class="page-menu-item__link">НАС РЕКОМЕНДУЮТ</a>
+                        </li>
+                        <li class="page-menu-item">
+                            <div class="page-menu-item__hover"></div>  
+                            <a href="#" class="page-menu-item__link">СЕРТИФИКАТЫ</a>
+                        </li>
+                        <li class="page-menu-item">
+                            <div class="page-menu-item__hover"></div>  
+                            <a href="#" class="page-menu-item__link">ДОКУМЕНТАЦИЯ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+		<div class="page-content">
+			<div class="page-content-container">
+				<h2 class="fit_content">
+					География поставок
+				</h2>
+		
+				<div class="geography-page">
+					<div class="geography-page-map">
+						<img src="img/supplies-geography-image.png" alt="" class="geography-page-map__img">
+					</div>
+					<div class="geography-page-list">
+						<table cellpadding="0" cellspacing="0">
+							<tbody>
+							<tr>
+								<td>
+							 <b>Россия</b>
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Анадырь
+								</td>
+								<td>
+									 г. Казань
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Калининград
+								</td>
+								<td>
+									 г. Лабытнанги
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Кировск
+								</td>
+								<td>
+									 г. Норильск
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Ковдор
+								</td>
+								<td>
+									 г. Орск
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Петрозаводск
+								</td>
+								<td>
+									 г. Челябинск
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Медвежьегорск
+								</td>
+								<td>
+									 г. Екатеринбург
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Выборг
+								</td>
+								<td>
+									 г. Курган
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Санкт-Петербург
+								</td>
+								<td>
+									 г. Барнаул
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Москва
+								</td>
+								<td>
+									 г. Кемерово
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Тула
+								</td>
+								<td>
+									 г. Иркутск
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Белгород
+								</td>
+								<td>
+									 г. Улан-Удэ
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Ставрополь
+								</td>
+								<td>
+									 г. Чита
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Краснодар
+								</td>
+								<td>
+									 г. Алдан
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Махачкала
+								</td>
+								<td>
+									 г. Благовещенск
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Севастополь
+								</td>
+								<td>
+									 г. Хабаровск
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 г. Липецк
+								</td>
+								<td>
+									 г. Владивосток
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+								</td>
+							</tr>
+							<tr>
+								<td>
+							 <b>Другие страны</b>
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 Казахстан
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 Грузия
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 Армения
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 Азербайджан
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 Узбекистан
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 Туркменистан
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 Болгария
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 Кения
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 Македония
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								</td>
+								<td>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <script src="js/scripts.min.js"></script>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-blocks">
+				<div class="footer-block">
+					<a href="/" class="footer__logo"></a>
+					<p class="footer__copyright">
+						©1997-2023
+					</p>
+				</div>
+				<div class="footer-block">
+					<ul class="footer-menu">
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__item__link">О компании/</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__item__link">Каталог/</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__item__link">Новости/</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__item__link">Спецпредложения/</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__item__link">Доставка/</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__item__link">Галерея/</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__item__link">Контакты/</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-block">
+					<div class="footer-partners">
+						<img src="img/partners-logo.png" alt="" class="footer-partners__img">
+					</div>
+				</div>
+				<div class="footer-block">
+					<div class="footer-contacts">
+						<a href="#" class="footer-contacts__phone">
+							+7 (351) 240-20-60
+						</a>
+						<a href="#" class="footer-contacts__phone">
+							+7 (351) 700-74-05
+						</a>
+
+						<p class="footer-contacts__address">
+							454091, г. Челябинск <br>
+							<span class="contacts_small">ул. Карла Маркса, д. 131, офю. 413</span>
+						</p>
+
+						<a href="#" class="footer-contacts__email">
+							<span class="contacts_small">e-mail: info@drobserbis.ru</span>
+						</a>
+
+						<ul class="footer-contacts-social">
+							<li class="footer-contacts-social__item">
+								<a href="#" class="footer-contacts-social__item__link"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
+

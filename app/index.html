@@ -21,7 +21,7 @@
         ul {
             margin: 0 auto;
             padding: 0px;
-            font-size: 26px;
+            font-size: 22px;
             text-align: center;
             margin-top: 60px;
 			position: relative;
@@ -33,7 +33,7 @@
         }
 
         ul li {
-            margin-bottom: 25px;
+            margin-bottom: 15px;
         }
 
 		.logo {
@@ -48,7 +48,7 @@
 			background-image: url("data:image/svg+xml,%3Csvg width='136' height='52' viewBox='0 0 136 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.33152 34.2918L52.0985 1.43945L46.3285 19.5016L73.0507 1.43945L57.1294 51.1067H43.7368L50.044 32.1233L22.5885 50.7676L28.8602 31.1258L0 50.9927L5.33152 34.2918Z' fill='%23572B0B'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M64.5898 51.1104L75.9905 15.3368L96.6523 1.3299L84.44 39.1449H106.085L118.286 0.650391H135.246L122.993 39.0302H130.097L126.23 51.1104H64.5898Z' fill='%23572B0B'/%3E%3C/svg%3E%0A") no-repeat;
 			background-position: center center;
 			background-size: contain;
-			margin-bottom: 170px;
+			margin-bottom: 190px;
 			left: -70px;
 			right: 0px;
 		}
@@ -65,39 +65,87 @@
 		<img src="img/logo.png" alt="Дробсервис">
 	</div>
 
+	
+	<p style="text-align: center; font-size: 22px;">Всего страниц: <span class="page-count"></span></p>
 
-	<ul>
+
+	<ul class="pages-list">
 		<li>
-			<a href="main.html">Главная</a>
+			<a href="main.html">Главная </a>
 		</li>
         <li>
-			<a href="about-1.html">О компании</a>
+			<a href="about-1.html">О компании </a>
 		</li>
 		<li>
 			<a href="about-2.html">О компании - ИНЖИНИРИНГ</a>
 		</li>
 		<li>
-			<a href="delivery.html">Доставка</a>
+			<a href="about-3.html">О компании - ГЕОГРАФИЯ ПОСТАВОК</a>
 		</li>
 		<li>
-			<a href="news.html">Новости</a>
+			<a href="about-4.html">О компании - НАС РЕКОМЕНДУЮТ</a>
 		</li>
 		<li>
-			<a href="catalog.html">Каталог - Основной</a>
+			<a href="about-5.html">О компании - СЕРТИФИКАТЫ</a>
 		</li>
 		<li>
-			<a href="catalog-2.html">Каталог - Установки сортировочные</a>
+			<a href="about-6.html">О компании - ДОКУМЕНТАЦИЯ</a>
 		</li>
 		<li>
-			<a href="catalog-3.html">Каталог - Питатели</a>
+			<a href="delivery.html">Доставка </a>
 		</li>
 		<li>
-			<a href="gallery.html">Галерея</a>
+			<a href="news.html">Новости </a>
 		</li>
 		<li>
-			<a href="contacts.html">Контакты</a>
+			<a href="news-details.html">Новость детальная </a>
+		</li>
+		<li>
+			<a href="gallery.html">Галерея </a>
+		</li>
+		<li>
+			<a href="contacts.html">Контакты </a>
+		</li>
+		<li>
+			<a href="politika.html">Политика конфиденциальности</a>
+		</li>
+		<li>
+			<a href="catalog.html">Каталог - Основной </a>
+		</li>
+		<li>
+			<a href="catalog-2.html">Каталог - 2 </a>
+		</li>
+		<li>
+			<a href="catalog-3.html">Каталог - 3 </a>
+		</li>
+		<li>
+			<a href="catalog-4.html">Каталог - 4 </a>
+		</li>
+		<li>
+			<a href="catalog-5.html">Каталог - 5 </a>
+		</li>
+		<li>
+			<a href="catalog-6.html">Каталог - 6 </a>
+		</li>
+		<li>
+			<a href="specal-offers-1.html">Спецпредложения</a>
+		</li>
+		<li>
+			<a href="specal-offers-2.html">Спецпредложения - детальная</a>
+		</li>
+		<li>
+			<a href="specal-offers-3.html">Спецпредложения - список деталей</a>
 		</li>
 	</ul>
+
+	<script src="js/scripts.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function(event) {
+			const pagesCount = $('.pages-list li').length;
+
+			$('.page-count').html(pagesCount);
+		});
+	</script>
 
 </body>
 </html>

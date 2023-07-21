@@ -17,7 +17,7 @@
         flex-direction: row
         justify-content: space-between
         align-items: flex-start
-        padding: 64px 0px 0px 0px
+        padding: 88px 0px 0px 0px
         .news-list-item
             position: relative
             padding: 0px 45px
@@ -32,14 +32,13 @@
             &:last-child
                 &::after
                     display: none
-            &:first-child
+            &:hover
                 .news-list-item__title
                     &:after
                         content: ''
                         background: url('../img/news-title-hover.png') no-repeat center center
                         background-size: contain
                         content: ""
-                        display: block
                         height: 99px
                         left: -25px
                         margin: 0 auto
@@ -48,6 +47,8 @@
                         top: -6px
                         width: 380px
                         z-index: 0
+                        opacity: 1
+                        transition: 0.2s all
             .news-list-item__link
                 text-decoration: none
                 color: #343433
@@ -56,16 +57,21 @@
             .news-list-item__title
                 font-size: 20px
                 color: #343433
-                font-family: circleEB, sans-serif
+                font-family: Circe, sans-serif
                 font-weight: 600
                 margin: 0px
                 margin-bottom: 5px
                 position: relative
                 z-index: 2
+                &::after
+                    content: ''
+                    background: none
+                    opacity: 0
+                    transition: 0.2s all
             .news-list-item__date
                 color: #343433
                 font-size: 12px
-                font-family: circleEB, sans-serif
+                font-family: Circe, sans-serif
                 font-weight: 300
                 margin: 0px
                 margin-bottom: 15px
@@ -73,7 +79,7 @@
             .news-list-item__text
                 color: #343433
                 font-size: 14px
-                font-family: circleEB, sans-serif
+                font-family: Circe, sans-serif
                 font-weight: 400
                 margin: 0px
 
@@ -87,7 +93,7 @@
 
     .news-more__link
         font-size: 14px
-        font-family: circleEB, sans-serif
+        font-family: Circe, sans-serif
         font-weight: 600
         color: #343433
         text-align: center
@@ -111,3 +117,8 @@
             width: 170px
             margin: 0 auto
             z-index: -1
+
+        &:hover
+            &::after 
+                opacity: 0.8
+                transition: 0.2s all

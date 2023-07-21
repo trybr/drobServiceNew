@@ -53,7 +53,8 @@
 
                 &:hover
                     .header-navigation-menu__hover
-                        display: block
+                        opacity: 1
+                        transition: 0.2s all
 
                 .header-navigation-menu__hover
                     height: 70px
@@ -66,16 +67,18 @@
                     margin: 0 auto
                     background: url('../img/menu-hover.png') no-repeat center center
                     background-size: contain
-                    display: none
+                    opacity: 0
+                    transition: 0.2s all
                 
                 .header-navigation-menu__link
                     color: #3c3c3c
                     font-size: 20px
                     text-decoration: none
                     font-weight: 400
-                    padding: 18px 18px
+                    padding: 18px 15px
                     position: relative
                     z-index: 2
+                    text-transform: uppercase
 
         .header-navigation-right-block
             display: flex
@@ -85,6 +88,15 @@
             padding-top: 18px
             padding-left: 65px
             position: relative
+
+        .header-navigation__phone
+            display: block
+            padding-right: 10px
+            font-size: 20px
+            color: #3c3c3c
+            text-decoration: none
+            position: relative
+            z-index: 2
             &:after
                 content: ''
                 background: url('../img/hover-bg.png') no-repeat center center
@@ -93,20 +105,25 @@
                 height: 55px
                 left: auto
                 position: absolute
-                right: 38px
-                top: 5px
+                right: 8px
+                top: -15px
                 width: 135px
-                z-index: 1
+                z-index: -1
+            &::before
+                content: ""
+                position: absolute
+                top: -8px
+                right: 0
+                width: 1px
+                height: 50px
+                background: #919191
+                opacity: 1
+                transition: 0.2s all
 
-        .header-navigation__phone
-            display: block
-            padding-right: 10px
-            border-right: 1px solid #919191
-            font-size: 20px
-            color: #3c3c3c
-            text-decoration: none
-            position: relative
-            z-index: 2
+            &:hover
+                &::after
+                    opacity: 0.8
+                    transition: 0.2s all
 
         .header-navigation-search
             margin-left: 10px
@@ -152,11 +169,13 @@
                 height: 200px
                 z-index: -1
         .header-banner__title
-            font-size: 48px
+            font-size: 42px
             color: #f6d718
-            font-family: circleEB, sans-serif
-            font-weight: 600
+            font-family: Circe, sans-serif
+            font-weight: 800
             text-transform: uppercase
             position: relative
             z-index: 2
             margin: 0px
+            padding: 0px 20px
+            margin-top: 15px
