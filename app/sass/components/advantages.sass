@@ -77,3 +77,30 @@
                 font-family: Circe, sans-serif
                 font-weight: 800
                 
+
+@media (min-width: 320px) and (max-width: 1363px)
+    .advantages
+        .container
+            padding: 0px
+
+        .advantages__title
+            font-size: 26px
+        .advantages-list
+            margin: 0 auto
+            padding: 0
+            list-style: none
+            max-width: 85%
+            .advantages-list__item
+                display: flex
+                justify-content: center
+                align-items: center
+                .advantages-list__item__number
+                    top: -10px
+                    font-size: 60px
+                .advantages-list__item__text
+                    font-size: 16px
+                    br
+                        display: none
+
+                &::after
+                    width: 100%

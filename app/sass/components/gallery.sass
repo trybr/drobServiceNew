@@ -34,6 +34,7 @@
             .gallery-item-image__img
                 max-height: 250px
                 object-fit: cover
+                padding-top: 25px
 
         .gallery-item__title
             padding-top: 15px
@@ -44,3 +45,20 @@
             font-family: Circe, sans-serif
             font-weight: 600
             margin: 0px
+
+@media (min-width: 481px) and (max-width: 1363px)
+    .gallery
+        .gallery-item
+            width: 45%
+            .gallery-item-image
+                .gallery-item-image__img
+                    width: 85%
+
+
+@media (min-width: 320px) and (max-width: 480px)
+    .gallery
+        .gallery-item
+            width: 100%
+            .gallery-item-image
+                .gallery-item-image__img
+                    width: 85%

@@ -6,6 +6,7 @@
     z-index: 1
     text-align: center
     margin-bottom: 75px
+    z-index: 2
     .banner-inner__image
         object-fit: cover
         width: 100%
@@ -20,3 +21,39 @@
         text-align: left
         width: 50%
         margin: 0 auto
+
+@media (min-width: 991px) and (max-width: 1363px)
+    .banner
+        margin-top: 0px
+        height: 380px
+        .banner-inner__image
+            height: 100%
+
+        .banner__title
+            left: 0px
+            font-size: 28px
+            line-height: 30px
+            bottom: 90px
+            width: 60%
+            margin: 0 auto
+            text-align: left
+            br
+                display: none
+
+@media (min-width: 320px) and (max-width: 990px)
+    .banner
+        margin-top: 0px
+        height: 380px
+        .banner-inner__image
+            height: 100%
+
+        .banner__title
+            left: 0px
+            font-size: 28px
+            line-height: 30px
+            bottom: 50px
+            width: 60%
+            margin: 0 auto
+            text-align: left
+            br
+                display: none

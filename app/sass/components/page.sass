@@ -276,3 +276,32 @@
                         right: 0px
                         left: -10%
                         margin: 0 auto
+
+@media (min-width: 320px) and (max-width: 1363px)
+    .page-wrapper
+        .page-content
+            .page-content-container
+                // width: 100%
+                h2
+                    font-size: 16px
+        .page-menu-navigation
+            height: auto
+            border: none
+            .page-menu
+                flex-direction: column
+                .page-menu-item
+                    width: 100%
+                    text-align: center
+                    border-bottom: 1px solid #3c3c3c
+                    padding: 13px 0px
+                    &.active
+                        background: #f6d71a
+                        .page-menu-item__link
+                            background: none
+                    &::after, &::before
+                        display: none
+
+        .page-menu-navigation-wrapper
+            &.active
+                &::after
+                    display: none !important
