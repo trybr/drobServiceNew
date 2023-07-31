@@ -70,7 +70,19 @@
                     z-index: 1
                     
 
-@media (min-width: 320px) and (max-width: 1363px)
+@media (min-width: 481px) and (max-width: 1363px)
+    .catalog-list
+        .catalog-list-items
+            flex-direction: column
+            padding: 15px 0px
+            flex-flow: wrap
+            .catalog-list-item
+                width: 49%
+                margin-bottom: 15px
+                &:last-child
+                    margin-bottom: 0px                    
+
+@media (min-width: 320px) and (max-width: 480px)
     .catalog-list
         .catalog-list-items
             flex-direction: column
