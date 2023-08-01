@@ -118,7 +118,8 @@
                 margin: 0 auto
                 background: url('../img/form-button.png') no-repeat center center
                 background-size: contain
-                width: 300px
+                width: 100%
+                max-width: 300px
                 height: 90px
                 position: absolute
                 top: 0px
@@ -168,3 +169,10 @@
                 z-index: 2
                 &:hover
                     text-decoration: underline
+
+
+@media (min-width: 320px) and (max-width: 1363px)
+    .popup
+        width: 95%
+        .popup-form
+            width: 100%
