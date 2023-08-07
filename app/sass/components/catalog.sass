@@ -113,6 +113,7 @@
         height: 90px
         cursor: pointer
         text-decoration: none
+        transition: 0.2s all
         &::before
             content: ''
             display: block
@@ -149,6 +150,7 @@
         height: 90px
         cursor: pointer
         text-decoration: none
+        transition: 0.2s all
         &::before
             content: ''
             display: block
@@ -182,6 +184,16 @@
         position: relative
         cursor: pointer
         padding-bottom: 24px
+        transition: 0.2s all
+        &::before
+            content: ''
+            border: 5px solid transparent
+            width: 100%
+            height: 100%
+            position: absolute
+            left: -5px
+            top: -5px
+            transition: 0.2s all
         &:hover
             &:before
                 content: ''
@@ -191,6 +203,7 @@
                 left: -5px
                 top: -5px
                 border: 5px solid #f6d718
+                transition: 0.2s all
             
 
         .catalog-item-image
@@ -257,7 +270,9 @@
     margin-bottom: 40px
     .catalog-table-row
         border: none
+        transition: 0.2s all
         &:hover
+            transition: 0.2s all
             background: #f6d718
         &:nth-child(odd)
             background: #f1f1f1
@@ -296,9 +311,11 @@
     .catalog-table-row
         border: none
         border: 1px solid #e5e5e5
+        transition: 0.2s all
         &:hover
             background: #f6d718
             border: 1px solid #f6d718
+            transition: 0.2s all
             .catalog-table-col
                 border: 1px solid #f6d718
         .catalog-table-col
@@ -333,13 +350,18 @@
     margin: 0px
     margin: 45px 0px
     .list-item
-        margin-bottom: 5px
+        margin-bottom: 10px
         .list-item__link
             font-size: 24px
             color: #454545
             font-family: Circe, sans-serif
             font-weight: bold
             font-style: normal
+            text-decoration: none
+            border-bottom: 2px solid #454545
+            transition: 0.2s all
+            &:hover
+                border-bottom: 2px solid transparent
 
 
 

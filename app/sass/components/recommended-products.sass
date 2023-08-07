@@ -68,6 +68,10 @@
                 position: relative
                 padding-left: 35px
                 z-index: 2
+                &:hover
+                    &::before 
+                        opacity: 0.8
+                        transition: 0.2s all
 
                 &::before
                     content: ''

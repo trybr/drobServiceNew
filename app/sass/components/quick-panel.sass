@@ -25,6 +25,8 @@
         background-position: center center
         background-repeat: no-repeat
         background-size: 55%
+        cursor: pointer
+        display: none
 
     .quick-panel-item
         display: flex
@@ -39,6 +41,7 @@
         position: relative
         color: #141515
         text-decoration: none
+        transition: 0.2s all
         &:hover, &.active
             background: #f6d718
 
@@ -98,4 +101,6 @@
 @media (min-width: 320px) and (max-width: 1363px)
     .quick-panel
         top: 30%
+        .quick-panel-close__btn
+            display: block
         

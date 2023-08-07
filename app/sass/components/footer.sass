@@ -64,9 +64,14 @@
                         text-transform: uppercase
                         position: relative
                         z-index: 2
+                        &::before
+                            content: ''
+                            transition: 0.2s all
+                            opacity: 0
                         &:hover
                             &::before
                                 content: ''
+                                transition: 0.2s all
                                 background: url('../img/footer-menu-hover.png') no-repeat center center
                                 background-size: contain
                                 bottom: 0px
@@ -77,6 +82,7 @@
                                 position: absolute
                                 width: 200px
                                 z-index: -1
+                                opacity: 1
 
             .footer-partners
                 max-width: 315px
