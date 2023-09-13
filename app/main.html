@@ -38,6 +38,11 @@
 				Заказать прайс
 			</span>
 		</a>
+		<a href="#popupManager" data-fancybox class="quick-panel-item item-icon-4">
+			<span class="quick-panel-item__title">
+				Обращение к руководителю
+			</span>
+		</a>
 		<a href="mailto:info@drobserbis.ru" class="quick-panel-item item-icon-3">
 			<span class="quick-panel-item__title">
 				E-mail
@@ -189,6 +194,46 @@
 				<a href="#" class="popup-menu__item__link">Контакты</a>
 			</li>
 		</ul>
+	</div>
+
+	<div class="popup" style="display: none;" id="popupManager">
+		<h4 class="popup__title">
+			Обращение к руководителю
+		</h4>
+
+		<p class="popup__text">
+			Напишите сообщение руководителю и мы свяжемся с вами в ближайшее время. <br>
+			* - Обязательные для заполнения поля
+		</p>
+
+		<form action="" class="popup-form">
+			<div class="form-field-wrapper">
+				<label for="name" class="form__label">ФИО *</label>
+				<input class="form__input" type="text" name="name" id="name">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="phone" class="form__label">Телефон</label>
+				<input class="form__input" type="text" name="phone" id="phone">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="company" class="form__label">Организация</label>
+				<input class="form__input" type="text" name="company" id="company">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="comment" class="form__label">Сообщение *</label>
+				<textarea class="form__textarea" name="comment" id="comment"></textarea>
+			</div>
+
+			<button class="form__button" type="submit">Отправить</button>
+		</form>
+
+		<p class="popup__text">
+			
+			Отправляя данные через форму, пользователь соглашается с <a href="#">Политикой конфиденциальности.</a>
+		</p>
 	</div>
 	<!-- popups -->
 

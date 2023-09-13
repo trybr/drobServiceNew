@@ -27,7 +27,7 @@
 	<!-- quick panel -->
 	<div class="quick-panel">
 		<div class="quick-panel-close__btn"></div>
-		
+
 		<a href="#popupRequest" data-fancybox class="quick-panel-item item-icon-1">
 			<span class="quick-panel-item__title">
 				Онлайн заявка
@@ -36,6 +36,11 @@
 		<a href="#popupPrice" data-fancybox class="quick-panel-item item-icon-2">
 			<span class="quick-panel-item__title">
 				Заказать прайс
+			</span>
+		</a>
+		<a href="#popupManager" data-fancybox class="quick-panel-item item-icon-4">
+			<span class="quick-panel-item__title">
+				Обращение к руководителю
 			</span>
 		</a>
 		<a href="mailto:info@drobserbis.ru" class="quick-panel-item item-icon-3">
@@ -146,6 +151,90 @@
 			Отправляя данные через форму, пользователь соглашается с <a href="#">Политикой конфиденциальности.</a>
 		</p>
 	</div>
+
+	<div class="popup" style="display: none;" id="popupMenu">
+		<ul class="popup-menu">
+			<li class="popup-menu__item">
+				<a href="#" class="popup-menu__item__link">О компании</a>
+
+				<ul class="popup-sub-menu">
+					<li class="popup-sub-menu__item">
+						<a href="#" class="popup-sub-menu__item__link">Инжиниринг</a>
+					</li>
+					<li class="popup-sub-menu__item">
+						<a href="#" class="popup-sub-menu__item__link">География поставок</a>
+					</li>
+					<li class="popup-sub-menu__item">
+						<a href="#" class="popup-sub-menu__item__link">Рекомендации</a>
+					</li>
+					<li class="popup-sub-menu__item">
+						<a href="#" class="popup-sub-menu__item__link">Сертификаты</a>
+					</li>
+					<li class="popup-sub-menu__item">
+						<a href="#" class="popup-sub-menu__item__link">Документация</a>
+					</li>
+				</ul>
+			</li>
+			<li class="popup-menu__item">
+				<a href="#" class="popup-menu__item__link">Каталог</a>
+			</li>
+			<li class="popup-menu__item">
+				<a href="#" class="popup-menu__item__link">Новости</a>
+			</li>
+			<li class="popup-menu__item">
+				<a href="#" class="popup-menu__item__link">Спецпредложения</a>
+			</li>
+			<li class="popup-menu__item">
+				<a href="#" class="popup-menu__item__link">Доставка</a>
+			</li>
+			<li class="popup-menu__item">
+				<a href="#" class="popup-menu__item__link">Галерея</a>
+			</li>
+			<li class="popup-menu__item">
+				<a href="#" class="popup-menu__item__link">Контакты</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="popup" style="display: none;" id="popupManager">
+		<h4 class="popup__title">
+			Обращение к руководителю
+		</h4>
+
+		<p class="popup__text">
+			Напишите сообщение руководителю и мы свяжемся с вами в ближайшее время. <br>
+			* - Обязательные для заполнения поля
+		</p>
+
+		<form action="" class="popup-form">
+			<div class="form-field-wrapper">
+				<label for="name" class="form__label">ФИО *</label>
+				<input class="form__input" type="text" name="name" id="name">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="phone" class="form__label">Телефон</label>
+				<input class="form__input" type="text" name="phone" id="phone">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="company" class="form__label">Организация</label>
+				<input class="form__input" type="text" name="company" id="company">
+			</div>
+
+			<div class="form-field-wrapper">
+				<label for="comment" class="form__label">Сообщение *</label>
+				<textarea class="form__textarea" name="comment" id="comment"></textarea>
+			</div>
+
+			<button class="form__button" type="submit">Отправить</button>
+		</form>
+
+		<p class="popup__text">
+			
+			Отправляя данные через форму, пользователь соглашается с <a href="#">Политикой конфиденциальности.</a>
+		</p>
+	</div>
 	<!-- popups -->
 
 	<header class="header">
@@ -237,6 +326,7 @@
             <div class="contacts-page">
 				<div class="container-fixed">
 					<h4 class="contacts__title">
+						<img src="img/contacts//contacts-icon-main.png" alt="" class="contacts__title__img">
 						КОНТАКТНЫЙ ТЕЛЕФОН В ЧЕЛЯБИНСКЕ: <span class="contacts__phones">(351) 240-20-60, 700-74-05</span>
 					</h4>
 	
