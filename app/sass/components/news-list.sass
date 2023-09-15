@@ -8,30 +8,39 @@
         position: relative
         &:nth-child(2n+2)
             background: #f1f1f1
+
+        .news-item-content-wrapper
+            display: flex
+            flex-direction: row
+
+        .news-item-image
+            max-width: 340px
+            .news-item-image__img
+                max-width: 340px
         .news-item-content__date
             color: #343433
             font-size: 12px
             font-family: Circe, sans-serif
-            font-weight: 500
+            font-weight: 600
             text-decoration: underline
             z-index: 3
             position: absolute
-            left: 130px
-            top: 30px
+            left: 75px
+            top: -20px
         .news-item-content__title
-            font-size: 32px
+            font-size: 28px
             color: #343433
             font-family: Circe, sans-serif
             font-weight: 600
             margin: 0px
-            margin-bottom: 30px
+            margin-bottom: 10px
             position: relative
             z-index: 2
             text-align: left
-            width: 80%
+            padding-top: 15px
             &:before
                 content: ''
-                left: 40px
+                left: -10px
                 position: absolute
                 top: -30px
                 background: url('../img/news-list-title-decorator.png') no-repeat center center
@@ -42,41 +51,40 @@
         .news-item-content
             padding-left: 35px
             display: flex
-            flex-direction: row
+            flex-direction: column
             justify-content: flex-start
-            .news-item-image
-                max-width: 335px
-                .news-item-image__img
-                    max-width: 335px
+            position: relative
             .news-item-content__text
                 font-family: Circe, sans-serif
                 font-weight: 400
                 font-size: 18px
-                padding-left: 35px
                 text-align: left !important
                 p
                     margin-bottom: 25px
                     text-align: left !important
+                    &:first-child
+                        margin-top: 0px
 
 
 @media (min-width: 320px) and (max-width: 1363px)
     .news-list
         .news-item
             background: none !important
+            padding-top: 0px
+
+            .news-item-content__date
+                left: 45px
+
+            .news-item-content-wrapper
+                flex-direction: column
             .news-item-content__title
                 font-size: 26px
                 width: 100%
-                &::before
-                    left: -20px
             .news-item-content
+                margin-top: 50px
                 padding: 0px
-                flex-direction: column-reverse
-                align-items: center
 
-                .news-item-image
+            .news-item-image
+                width: 100%
+                .news-item-image__img
                     width: 100%
-                    .news-item-image__img
-                        width: 100%
-
-                .news-item-content__text
-                    padding: 0px
